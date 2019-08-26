@@ -1,0 +1,172 @@
+//颜色
+//品牌色
+$color-brand: #3EA2FD; //品牌色`关键行动点,操作状态,重要信息高亮,LOGO,图形化等场景`
+
+//功能色 `功能色代表了明确的信息状态，如正常、异常等；其色彩构成需符合用户对色彩的基本认知。`
+$color-success: #00C853; //成功
+$color-warning: #FFA726; //警告
+$color-danger: #F56C6C; //异常/错误
+
+//中性字色 `用 alpha 值去控制字体颜色，比起用 Web 安全色（333,666），文字可以更好的适应不同背景`
+$color-text-primary: #333333; //主要文字颜色`(标题)`
+$color-text-regular: #515151; //常规文字颜色`(正文内容)`
+$color-text-secondary: #999999; //次要文字颜色`(辅助信息)`
+$color-text-placeholder: $color-text-secondary; //占位文字颜色`(不可用)`
+$color-text-white: #ffffff; //深色背景文字颜色
+
+//衍生色 `通过色板生成工具，由主色衍生而来的 10 阶配色，选取其中部分色彩作为辅色使用。`
+$color-brand-hover: #7D9AC9; //`(Hover)`
+$color-brand-click: #3E5A96; //`(点击)`
+$color-background: #ffffff; //`(背景)`
+$color-border: #dcdfe6; //`(组件描边/分割线)`
+$color-dark-background: #f0f2f5; //(导航栏背景,表头背景)
+
+//字阶
+//一级标题
+$font-size-h1: 20px;
+$font-line-height-h1: 24px;
+
+//二级标题
+$font-size-h2: 16px;
+$font-line-height-h2: 24px;
+
+//正文内容
+$font-size-base: 14px;
+$font-line-height-base: 20px;
+
+//助信信息
+$font-size-extra: 12px;
+$font-line-height-extra: 18px;
+
+//圆角
+$border-radius-zero: 0; //无圆角
+$border-radius-small: 2px; //小圆角 `用于极小组件，如checkbox，tags，lables。`
+$border-radius-base: 4px; //正常圆角 `用于按钮、输入框，等 。
+$border-radius-large: $border-radius-base; //大圆角 `用于卡片，弹窗，等大组件 。`
+$border-radius-circle: 100%; //圆形圆角
+
+//度量 `当间距发生重叠时,取大者`
+//基础边距
+$space-8px: 8px;
+$space-16px: 16px;
+$space-24px: 24px;
+$space-32px: 32px;
+$space-48px: 48px;
+$space-56px: 56px;
+$space-72px: 72px;
+//边距规范
+$page-padding: $space-32px; //页面间距 32px
+$normal-component-height: $space-32px; //输入框，按钮高度32px,表单行高32px
+$component-padding: $space-8px; //控件内边距 8px
+$nav-bar-height: $space-56px; //顶部导航 56px
+$copyright-container-height: $space-32px; //底部copyright 32px
+$side-bar-menu-height: $space-56px; //左边一级导航 56px
+$side-bar-sub-menu-height: $space-48px; //二级导航 48px,表格行高 48px
+$component-iconfont-size: $space-16px; //控件内图标大小16px
+$margin-between-component: $space-24px; //表单行间距(组件与组件之间的间距)24px
+//- 文字与图标（如果图标与字体一样大，则边距为8px）或组件边距16px
+//- dropdown和输入框的间距 16px
+//模块与模块间距
+$margins-sides-of-dividing-line: $page-padding; //线分隔 32px
+$Leave-blank-space: $space-48px; //留白 48px
+//- 面分隔 24px
+
+
+// base color
+$blue: #324157;
+$light-blue: #3A71A8;
+$red: #C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow: #FEC171;
+$panGreen: #30B08F;
+$white: #fff;
+
+$color-primary: #3EA2FD;
+$color-primary-tint: #a9ecfd;
+$color-primary-middle: #5dadfd;
+$color-primary-dark: #2293fd;
+
+$color-secondary: #1E8E3E;
+$color-secondary-tint: #1E8E3E;
+$color-secondary-middle: #1E8E3E;
+$color-secondary-dark: #1E8E3E;
+
+$color-black: #000000;
+$color-black-tint: #000000;
+$color-black-middle: #000000;
+$color-black-dark: #333333;
+
+$color-gray-1: #F0F2F5;
+$color-gray-2: #FEFEFF;
+$color-gray-3: #DDDDDD;
+
+$color-font: #515151;
+$color-black: #999999;
+
+
+//z-index
+$z-level-1210: 1210;
+$z-level-1230: 1230;
+$z-level-1250: 1250;
+$z-level-side-page: 3;
+$z-level-2: 1;
+$z-level-3: 0;
+$z-level-4: 999;
+
+// sidebar
+$menuText: #515151;
+$menuActiveText: $color-primary;
+$subMenuActiveText: #515151; // https://github.com/ElemeFE/element/issues/12951
+
+$sideBarBg: $color-gray-1;
+$menuBg: $color-gray-1;
+$menuHover: $color-gray-1;
+
+$subMenuBg: $color-gray-2;
+$subMenuHover: rgba(0, 0, 0, 0);
+
+$sideBarWidth: 160px;
+$sideBarMinWidth: 54px;
+
+$topBarHeight: 50px; //topBar的高度
+$serviceTitleHeight: 56px; //服务标题的高度
+$base-fontsize: 14px;
+$fontsize-20: 20px;
+
+
+//主板块样式
+$padding-size: 30px; //主板块padding样式
+$title-color: #333333; //标题颜色
+$title-size: 20px; //标题字体大小
+$title-lineheight: 30px; //标题行间距
+$title-fontfamily: MicrosoftYaHei; //标题字体样式
+$titlt-fontweight: 400; //标题字体字重
+
+//主板块下拉框样式
+// $select-width:110px;//下拉框宽度
+// $select-height:36px;//下拉框高度
+$select-fontcolor: #515151; //下拉框字体颜色
+$select-fontsize: 14px; //下拉框字体大小
+$select-fontfamily: MicrosoftYaHei; //下拉框字体样式
+//主板块输入框样式
+// $input-width:180px;
+// $input-height:36px;
+$input-fontcolor: #999999; //输入框字体颜色
+$input-fontsize: 14px; //输入框字体大小
+$input-fontfamily: MicrosoftYaHei;
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+
+  topBarHeight: $topBarHeight;
+}

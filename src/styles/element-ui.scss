@@ -1,0 +1,179 @@
+@import './variables.scss';
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// el-tabs 切换sheet页
+.el-tabs--top {
+  margin-left: 0 !important;
+
+  .el-tabs__header {
+    margin: 0;
+  }
+
+  .el-tabs__item {
+    height: $space-48px;
+    line-height: $space-48px;
+    padding: 0 $space-16px !important;
+    font-size: $font-size-h2;
+    min-width: $space-72px;
+    text-align: center;
+
+
+    &.is-active {
+      color: $color-brand !important;
+      border-bottom: 1px solid $color-brand;
+    }
+
+    &:hover {
+      color: $color-brand !important;
+      border-bottom: 1px solid $color-brand;
+    }
+  }
+
+  .el-tabs__nav-wrap::after {
+    background-color: $color-border !important;
+    height: 1px !important;
+
+
+    .detail-layout .window-header & {
+      display: none; //侧边栏展开的页面导航栏没有底部划线
+    }
+  }
+
+  .el-tabs__active-bar {
+    display: none;
+  }
+}
+
+//Button
+.el-button [class*="el-icon-"] + span {
+  margin-left: $space-8px !important;
+}
+
+.el-button--medium {
+  min-width: 72px;
+}
+
+.btn-plus {
+  min-width: 0 !important; //仅图标的方形按钮去除最小宽度的限制
+}
+
+//table
+.el-table {
+  .el-table__header {
+    font-size: $font-size-h2; //修改表头标题字体大小为16px
+
+    th.is-leaf {
+      border-bottom: 1px solid $color-dark-background; //将表头的下划线颜色改为表头背景颜色一致(由于高度也需要下划线1px撑开至48px,所以不能直接去掉)
+    }
+  }
+
+  .el-table__body-wrapper {
+    -webkit-transform: translate3d(0, 0, 0); //解决Chrome浏览器下 滚动条无法被子元素或高z-index层级的元素覆盖的问题
+  }
+
+  &::before {
+    display: none; //隐藏表格最底部分割线
+  }
+
+  &.el-table--medium th, &.el-table--medium td {
+    padding: 12px 0; //将单行行高撑开至48px
+  }
+}
+
+//form
+.el-form-item--medium .el-form-item__content {
+  line-height: $normal-component-height;
+}
+
+
+
+
+
+//图标
+
+
+//刷新按钮样式
+.el-icon-refresh-right{
+  color: $color-primary;
+  font-size:$font-size-h2;
+  margin:$space-8px;
+}
+
